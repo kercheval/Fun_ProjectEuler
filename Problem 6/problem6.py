@@ -7,16 +7,14 @@ def sum_of_natural_numbers(max_natural) -> int:
     return sum_of_naturals
 
 
-def square_of_sums_of_natural_numbers(max_natural):
+def square_of_sums_of_natural_numbers(max_natural) -> int:
     square_of_sum = sum_of_natural_numbers(MAX_NATURAL) ** 2
     print("Square of sum of first n natural numbers for " + str(max_natural) + " is " + str(square_of_sum))
     return square_of_sum
 
 
-def sum_of_squares_of_natural_numbers(max_natural):
-    sum_of_squares = 0
-    for natural in range(1, max_natural+1):
-        sum_of_squares += natural ** 2
+def sum_of_squares_of_natural_numbers(max_natural) -> int:
+    sum_of_squares = ((2 * max_natural + 1) * (max_natural + 1) * max_natural) // 6
     print("Sum of squares of first n natural numbers for " + str(max_natural) + " is " + str(sum_of_squares))
     return sum_of_squares
 
