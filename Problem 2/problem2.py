@@ -14,4 +14,5 @@ while this_fib < STOP_SENTINAL:
     if is_even(this_fib):
         even_sum += this_fib
 
+# Sum of even fibs less than 4000000 is 4613732
 print("Sum of even fibs less than " + str(STOP_SENTINAL) + " is " + str(even_sum))
