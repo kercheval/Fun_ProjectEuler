@@ -1,12 +1,14 @@
 def check_triplet(a, b, c):
     is_right_triangle = a**2 + b**2 == c**2
     if is_right_triangle:
-        print("Edge lengths matching constraints: [" + str(a) + "," + str(b) + "," + str(c) + "] with product " + str(a * b * c))
+        print("Edge lengths matching constraints: ["
+              + str(a) + "," + str(b) + "," + str(c) +
+              "] with product " + str(a * b * c))
         return True
     return False
 
 
-def iterate_triplet(edge_constraint) -> []:
+def iterate_triplet(edge_constraint):
     c = edge_constraint - 3
     b = edge_constraint - c - 1
     if b >= c:
